@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Petromir Petrov | Website designer</title>
+        <link rel="stylesheet" href="index.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div class="navWrapper">
+            <div class="nav">
+                <div class="mobile">
+                    <div class="logo">
+                        <img alt="Petromir Petrov"/>
+                    </div>
+                    <i class="fa fa-bars" aria-hidden="true" onclick="myFunction()"></i>
+                </div>
+
+                <div class="navigation" id="navigation">
+                    <div class="navItem" onclick="scroll(home)">
+                        <a  href="#home">Home</a>
+                    </div>
+                    <div class="navItem" onclick="scroll(projects)">
+                        <a  href="#projects">My projects</a>
+                    </div>
+                    <div class="navItem" onclick="scroll(contact)">
+                        <a  href="#contact">Contact me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero" id="home">
+            <div class="welcomeMessage">
+                <h1>Hi, my name is <strong>Petromir</strong></h1>
+                <p>
+                    I’m a full-stack web developer experienced in HTML, CSS, Figma, React and Firebase. My job is making a 
+                    <strong>fast, responsive and reliable website</strong> for you.</p>
+            </div>
+            <img src="images/landing.png">
+
+        </div>
+        <div class="offersWrapper">
+            <div class="offers">
+                    <div class="row">
+                        <div class="offer">
+                            <h3>FAST</h3>
+                            <img src="images/fast.svg"/>
+                        </div>
+                        <div class="offer">
+                            <h3>RESPONSIVE</h3>
+                            <img src="images/responsive.svg"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offer">
+                            <h3>MODERN</h3>
+                            <img src="images/modern.svg"/>
+                        </div>
+                        <div class="offer">
+                            <h3>SEO OPTIMIZED</h3>
+                            <img src="images/seo.svg"/>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <div class="project">
+                <img src="/images/contact.svg"/>
+                <div class="aboutProject">
+                    <h4>ZAUCHENIKA</h4>
+                    <p>A project for lorem ipsum</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="/images/contact.svg"/>
+                <div class="aboutProject">
+                    <h4>AGROTOROVE</h4>
+                    <p>A project for lorem ipsum</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="/images/contact.svg"/>
+                <div class="aboutProject">
+                    <h4>FUTURE</h4>
+                    <p>A project for lorem ipsum</p>
+                </div>
+            </div>
+        </div>
+        <div class="contactWrapper" id="contact">
+            <h3>Contact me</h3>
+            <div class="contact">
+
+                <div class="image">
+                    <img src="images/drawing.svg"/>
+                </div>
+                <form action="https://formsubmit.co/pgamesdev1@gmail.com" method="POST" class="contactForm">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email adress" required>
+                    <textarea placeholder="Your message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="topFooter">
+                <div class="socialWrapper">
+                    <h3>FIND ME AT</h3>
+                    <div class="social">
+                        <img src="images/github.png"/>
+                        <img src="images/twitter.png"/>
+                        <img src="images/reddit.png"/>
+                    </div>
+                </div>
+                <div class="footerNav">
+                    <a onclick="scroll(home)" href="#home">Home</a>
+                    <a onclick="scroll(projects)" href="#projects">My projects</a>
+                    <a onclick="scroll(contact)" href="#contact">Contact me</a>
+                </div>
+            </div>
+            <div class="bottomFooter">
+                <h5>Made by Petromir Petrov</h5>
+            </div>
+        </footer>
+    </body>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navigation");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+        function scroll(id){
+            var elmnt = document.getElementById(id);
+            elmnt.scrollIntoView(); 
+
+           
+        }
+    </script>
+</html>
