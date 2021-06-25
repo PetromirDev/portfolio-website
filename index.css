@@ -142,7 +142,11 @@ html{
     width: calc(300px + 30vw);
 }
 @media (max-width: 600px){
+    .hero{
+       align-items: flex-start;
+    }
     .welcomeMessage{
+        margin-top: 20vh;
         padding-left: 10px;
         padding-right: 10px;
     }
