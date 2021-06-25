@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
         <title>Petromir Petrov | Website designer</title>
         <meta name="viewport" content="width=device-width, inital-scale=1" >
         <link rel="stylesheet" href="index.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
     </head>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".welcomeMessage", {
+            delay: 1,
+            x: 400,
+            rotation: 360,
+            duration: 3
+        });
+
+        function myFunction() {
+            var x = document.getElementById("navigation");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } 
+            else {
+                x.style.display = "flex";
+            }
+        }
+        function scroll(id){
+            var elmnt = document.getElementById(id);
+            elmnt.scrollIntoView(); 
+        }
+    </script>
     <body>
         <div class="navWrapper">
             <div class="nav">
@@ -46,21 +72,21 @@
                     <div class="row">
                         <div class="offer">
                             <h3>FAST</h3>
-                            <img src="images/fast.svg"/>
+                            <img src="images/fast.svg" alt="fast"/>
                         </div>
                         <div class="offer">
                             <h3>RESPONSIVE</h3>
-                            <img src="images/responsive.svg"/>
+                            <img src="images/responsive.svg" alt="responsive"/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="offer">
                             <h3>MODERN</h3>
-                            <img src="images/modern.svg"/>
+                            <img src="images/modern.svg" alt="modern"/>
                         </div>
                         <div class="offer">
                             <h3>SEO OPTIMIZED</h3>
-                            <img src="images/seo.svg"/>
+                            <img src="images/seo.svg" alt="seo"/>
                         </div>
                     </div>
 
@@ -68,31 +94,40 @@
         </div>
         <div class="projects" id="projects">
             <div class="project">
-                <img src="/images/contact.svg"/>
+                <img src="/images/zauchenika.png" alt="Zauchenika"/>
                 <div class="aboutProject">
-                    <h4>ZAUCHENIKA</h4>
-                    <p>A project for lorem ipsum</p>
+                    <div>
+                        <h4>ZAUCHENIKA</h4>
+                        <p>is a forum for students, run by students in Bulgaria.</p>
+                    </div>
+                    <a href="">VIEW</a>
                 </div>
             </div>
             <div class="project">
-                <img src="/images/contact.svg"/>
+                <img src="/images/agrotorove.png"/>
                 <div class="aboutProject">
-                    <h4>AGROTOROVE</h4>
-                    <p>A project for lorem ipsum</p>
+                    <div>
+                        <h4>AGROTOROVE</h4>
+                        <p>is a firm trading mineral fertilezers, based in Bulgaria.</p>
+                    </div>
+                    <a href="">VIEW</a>
                 </div>
             </div>
             <div class="project">
-                <img src="/images/contact.svg"/>
+                <img src="/images/bansko.png"/>
                 <div class="aboutProject">
-                    <h4>FUTURE</h4>
-                    <p>A project for lorem ipsum</p>
+                    <div>
+                        <h4>Spa Hotel Bansko</h4>
+                        <p>is a simple unofficial Google site that has nothing to do with Spa Hotel Bansko</p>
+                    </div>
+                    <a href="">VIEW</a>
+                   
                 </div>
             </div>
         </div>
         <div class="contactWrapper" id="contact">
             <h3>Contact me</h3>
             <div class="contact">
-
                 <div class="image">
                     <img src="images/drawing.svg"/>
                 </div>
@@ -125,20 +160,5 @@
             </div>
         </footer>
     </body>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("navigation");
-            if (x.style.display === "flex") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "flex";
-            }
-        }
-        function scroll(id){
-            var elmnt = document.getElementById(id);
-            elmnt.scrollIntoView(); 
-
-           
-        }
-    </script>
+   
 </html>
