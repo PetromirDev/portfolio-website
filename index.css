@@ -18,7 +18,7 @@ html{
     align-items: center;
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     padding: 20px 40px;
     z-index: 999;
 }
@@ -78,7 +78,7 @@ html{
         box-shadow: 0px 0px 2px black;
     }
     .mobile{
-        padding: 10px 15px 5px 10px;
+        padding: 10px 5px 5px 10px;
     }
     .nav{
         flex-direction: column;
@@ -152,16 +152,16 @@ html{
     }
     .hero img{
         width: 400px;
-        bottom:30;
+        top: 55%;
     }
 
 
 }
-/*@media (max-width: 400px){
+@media (max-width: 380px){
     .hero img{
         width: 300px;
     }
-}*/
+}
 /*OFFERS*/
 .offers{
     padding: 80px 20px;
@@ -170,11 +170,16 @@ html{
     align-items: center;
 }
 .row{
-    padding-top: 50px;
+    /* padding-top: 50px; */
     display: flex;
     flex-direction: column;
 }
-
+.offer{
+    margin-top: 30px;
+}
+.offer:first-child{
+    margin-top: 0px;
+}
 .offer h3{
     font-size: 30px;
     text-align: center;
