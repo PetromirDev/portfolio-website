@@ -146,16 +146,22 @@ html{
        align-items: flex-start;
     }
     .welcomeMessage{
-        margin-top: 20vh;
+        margin-top: 30vh;
         padding-left: 10px;
         padding-right: 10px;
     }
+    .hero img{
+        width: 400px;
+        bottom:30;
+    }
+
+
 }
-@media (max-width: 400px){
+/*@media (max-width: 400px){
     .hero img{
         width: 300px;
     }
-}
+}*/
 /*OFFERS*/
 .offers{
     padding: 80px 20px;
