@@ -13,6 +13,20 @@ html{
     overflow-y: auto;
     scroll-behavior: smooth;
 }
+#button{
+    font-weight: 500;
+    color: white;
+    overflow: hidden;
+    background: #ED4B4B;
+    transition: .2s ease-in-out;
+    text-decoration: none; 
+}
+#button:hover{
+    cursor: pointer;
+    background: #34A6ED;
+}
+/*NAVBAR*/
+
 .navWrapper{
     position: fixed;
     align-items: center;
@@ -343,6 +357,10 @@ a:hover{
     padding: 10px 5px;
     border-radius: 25px;
     margin-top: 10%;
+    transition: 0.2s ease-in-out;
+}
+.aboutProject a:hover{
+    background: #34A6ED;;
 }
 @media (min-width: 400px){
     .project{
