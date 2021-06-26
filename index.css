@@ -32,14 +32,16 @@ html{
     align-items: center;
 }
 .logo img{
-    margin-right: 20px;
+    margin-right: 10px;
     width: 50px;
 }
-/* .logo a{
+.logo a{
+    display: none;
     cursor: pointer;
     font-weight: bold;
-    font-size: 35px;
-} */
+    font-size: 25px;
+    color: black;
+}
 .mobile{
     display: flex;
     justify-content: space-between;
@@ -97,6 +99,9 @@ html{
         background-color: white;
         padding: 0px;
         box-shadow: 0px 0px 2px black;
+    }
+    .logo a{
+        display: flex;
     }
     .mobile{
         padding: 10px 5px 5px 10px;
