@@ -6,7 +6,7 @@ gsap.from(".welcomeMessage", {
         trigger: ".hero",
         start: "200px center",
         end: "center bottom",
-        markers: true
+        
     },
     delay: 0.2,
     y: 100,
@@ -18,10 +18,9 @@ gsap.from(".welcomeIMG", {
         trigger: ".hero",
         start: "200px center",
         end: "center bottom",
-        markers: true
+        
     },
     delay: 0.2,
-    x: 200,
     opacity: 0,
     duration: 1
 });
@@ -31,10 +30,10 @@ gsap.from(".offer", {
         trigger: ".offer",
         start: "-200px center",
         end: "center bottom",
-        markers: true
+        
     },
     delay: 0.2,
-    x: -100,
+    x: -10,
     opacity: 0,
     duration: 1
 });
@@ -44,7 +43,7 @@ gsap.from("#project1", {
         trigger: "#project1",
         start: "-200px center",
         end: "200px center",
-        markers: true
+        
     },
     delay: 0.2,
     opacity: 0,
@@ -56,7 +55,7 @@ gsap.from("#project2", {
         trigger: "#project2",
         start: "-200px center",
         end: "200px center",
-        markers: true
+        
     },
     delay: 0.2,
     opacity: 0,
@@ -68,7 +67,7 @@ gsap.from("#project3", {
         trigger: "#project3",
         start: "-200px center",
         end: "200px center",
-        markers: true
+        
     },
     delay: 0.2,
     y:50,
@@ -81,7 +80,7 @@ gsap.from(".anim1", {
         trigger: ".contactForm",
         start: "-300px center",
         end: "200px center",
-        markers: true
+        
     },
     delay: 0.2,
     x:100,
@@ -93,7 +92,7 @@ gsap.from(".anim", {
         trigger: ".contactForm",
         start: "-200px center",
         end: "200px center",
-        markers: true
+        
     },
     delay: 0.2,
     y:50,

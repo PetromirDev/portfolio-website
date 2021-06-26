@@ -20,11 +20,12 @@ html{
     background: #ED4B4B;
     transition: .2s ease-in-out;
     text-decoration: none; 
+    cursor: pointer;
 }
-#button:hover{
+/* #button:hover{
     cursor: pointer;
     background: #34A6ED;
-}
+} */
 /*NAVBAR*/
 
 .navWrapper{
@@ -349,7 +350,7 @@ a:hover{
     font-size: 25px;
     padding-bottom: 10px;
 }
-.aboutProject a{
+#view{
     background-color: #ED4B4B;
     color:white;
     font-size: 20px;
@@ -359,7 +360,7 @@ a:hover{
     margin-top: 10%;
     transition: 0.2s ease-in-out;
 }
-.aboutProject a:hover{
+#view:hover{
     background: #34A6ED;;
 }
 @media (min-width: 400px){
