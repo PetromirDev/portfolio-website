@@ -511,10 +511,12 @@ footer{
 }
 .social img{
     width: 50px;
-    margin-left: 20px;
     cursor: pointer;
 }
-.social img:first-child{
+.social a{
+    margin-left: 20px;
+}
+.social a:first-child{
     margin-left: 0px;
 }
 .footerNav{
