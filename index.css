@@ -237,8 +237,12 @@ html{
     .offer{
         margin-right: 50px;
     }
+    .row .offer:last-child{
+        margin-top: 0px;
+    }
 }
 @media (min-width: 1600px){
+
     .offer img {
         width: 300px;
         height: 300px;
