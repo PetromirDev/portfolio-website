@@ -183,7 +183,7 @@ html{
 .hero strong{
     color: #ED4B4B;
 }
-.hero img{
+.welcomeIMG{
     position: absolute;
     right: 0px;
     bottom: -50px;
