@@ -197,9 +197,9 @@ html{
 } */
 .welcomeMessage a {
     font-weight: 900;
-    color: #ED4B4B;
+    color: #ff0000;
     overflow: hidden;
-    background: linear-gradient(to right, #34A6ED, #34A6ED 50%, #ED4B4B 50%);
+    background: linear-gradient(to right, #34A6ED, #34A6ED 50%, #ff0000 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -528,7 +528,8 @@ footer{
     font-weight: 400;
     margin-bottom: 10px;
 }
-.social img{
+.social a img{
+
     width: 50px;
     cursor: pointer;
 }/*2*/
