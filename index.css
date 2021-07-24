@@ -48,10 +48,10 @@ html{
 }
 .logo img{
     margin-right: 10px;
-    width: 50px;
+    width: 80px;
 }
 .logo a{
-    display: none;
+    /* display: none; */
     cursor: pointer;
     font-weight: bold;
     font-size: 25px;
@@ -108,6 +108,12 @@ html{
     .navItem{
         margin-right: 20px;
     }
+    .navWrapper{
+        padding: 10px 10px;
+    }
+    .welcomeMessage{
+        padding: 0px 10px!important;
+    }
 }
 @media (max-width: 700px){
     .navWrapper{
@@ -118,8 +124,11 @@ html{
     .logo a{
         display: flex;
     }
+    .logo img{
+        width: 50px;
+    }
     .mobile{
-        padding: 10px 5px 5px 10px;
+        padding: 10px 10px 10px 10px;
     }
     .nav{
         flex-direction: column;
@@ -180,9 +189,14 @@ html{
     text-align: justify;
     max-width: 900px;
     font-size: calc(12px + 2.1vw);   
+    color: rgb(51, 51, 51);
 }
 .hero strong{
     color: #ED4B4B;
+    font-weight: 500;
+}
+.welcomeMessage h1 strong{
+    font-weight: 800;
 }
 .welcomeIMG{
     position: absolute;
@@ -199,14 +213,25 @@ html{
     font-weight: 900;
     color: #ff0000;
     overflow: hidden;
-    background: linear-gradient(to right, #34A6ED, #34A6ED 50%, #ff0000 50%);
+    /* background: linear-gradient(to right, #34A6ED, #34A6ED 50%, #ff0000 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 100%;
-    transition: background-position 275ms ease;
+    transition: background-position 275ms ease; */
     text-decoration: none; 
+    margin-top: 20px;
+    background-color: #ED4B4B;
+    width: calc(160px + 8vw);
+    display: flex;
+    justify-content: center;
+    /* width: max-content; */
+    padding: 12px 0px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: calc(14px + 1vw);
   }
 a:hover{
     cursor: pointer;
@@ -334,6 +359,10 @@ a:hover{
     border-radius: 8px;
     box-shadow: 0px 0px 15px rgb(0,0,0, 0.35);
 }
+.project p{
+    height: 100%;
+    margin-bottom: 20%;
+}
 .project img{
     height: 40%;
 }
@@ -357,7 +386,7 @@ a:hover{
     width: 60%;
     padding: 10px 5px;
     border-radius: 25px;
-    margin-top: 10%;
+    /* margin-top: 10%; */
     transition: 0.2s ease-in-out;
 }
 #view:hover{
