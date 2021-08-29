@@ -362,10 +362,10 @@ header a{
   .welcome-buttons{
     margin-top: 100px;
   }
-  #home{
+  /* #home{
     align-items: flex-end;
     padding-bottom: 30px;
-  }
+  } */
 }
 @media (min-height: 800px){
   #home{
