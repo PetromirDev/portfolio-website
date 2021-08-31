@@ -4,10 +4,11 @@
         <title>Petromir Petrov | Web Developer</title>
         <link rel="stylesheet" href="index.css">
         <meta charset="UTF-8">
-        <meta name="description" content="Free Web tutorials">
+        <meta name="description" content="Hi, my name is Petromir Petrov and I'm a front-end web developer and designer.">
         <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="John Doe">
+        <meta name="author" content="Petromir Petrov">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/logo.png" type="image/png">
         <script defer src="index.js"></script>
     </head>
     <body>
@@ -31,7 +32,7 @@
                   <a class="nav-item" href="#about">About</a>
                   <a class="nav-item" href="#projects">Projects</a>
                   <a class="nav-item" href="#prices">Prices</a>
-                  <a class="nav-item" href="/bg">Bulgarian</a>
+                  <a class="nav-item" href="/bg">Български</a>
                 </div>
                 <div class="extras">
                   
@@ -61,7 +62,7 @@
               </div>
             </div>
           </section>
-          <section class="section about scroll">
+          <section class="section about scroll scroll-opacity">
             <a href="#" class="anchor" id="about"></a> 
             <div class="about-wrapper">
               <div class="about-left">
@@ -90,28 +91,70 @@
               </div>
             </div>
           </section>
-          <section class="section scroll">
+          <section class="section projects">
             <a href="#" class="anchor" id="projects"></a>
+            <h6>My projects</h6>
+            <h3>Check out some projects that I've made</h3>
             <div class="projects-flex">
-              <div class="project-tile">
+              <div class="project-tile scroll scroll-from-right">
                 <img loading="lazy" alt="project" src="https://propus-elementor.nelly-k.com/wp-content/uploads/2021/02/Portfolio-01-768x512.jpg"/>
-                <a href="#">Lgitur neque stultorum</a>
-                <h4>Brand Identity / Web Design</h4>
+                <div class="project-tile-body">
+                  <h2 class="project-name">Lorem lipsum</h2>
+                  <div class="line project-line"></div>
+                  <div class="project-stack">
+                    <h3 class="project-stack-item">Lorem.</h3>
+                    <h3 class="project-stack-item">Lorem.</h3>
+                    <h3 class="project-stack-item">Lorem.</h3>
+                    <h3 class="project-stack-item">Lorem.</h3>
+                  </div>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, quaerat?</p>
+                  <div class="project-tile-bottom">
+                    <a href="#" class="project-bottom-preview">Preview</a>
+                    <a href="#" class="project-bottom-github">Github</a>
+                  </div>
+                </div>                               
               </div>
-              <div class="project-tile" >
+              <div class="project-tile scroll scroll-from-left">
                 <img loading="lazy" alt="project" src="https://propus-elementor.nelly-k.com/wp-content/uploads/2021/02/Portfolio-01-768x512.jpg"/>
-                <a href="#">Lgitur neque stultorum</a>
-                <h4>Brand Identity / Web Design</h4>
+                <div class="project-tile-body">
+                  <h2 class="project-name">Lorem lipsum</h2>
+                  <div class="line project-line"></div>
+                  <div class="project-stack">
+                    <h3 class="project-stack-item">Lorem.</h3>
+                    <h3 class="project-stack-item">Lorem.</h3>
+                    <h3 class="project-stack-item">Lorem.</h3>
+                    <h3 class="project-stack-item">Lorem.</h3>
+                  </div>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, quaerat?</p>
+                  <div class="project-tile-bottom">
+                    <a href="#" class="project-bottom-preview">Preview</a>
+                    <a href="#" class="project-bottom-github">Github</a>
+                  </div>
+                </div>                               
               </div>
-              <div class="project-tile">
+              <div class="project-tile scroll scroll-from-right">
                 <img loading="lazy" alt="project" src="https://propus-elementor.nelly-k.com/wp-content/uploads/2021/02/Portfolio-01-768x512.jpg"/>
-                <a href="#">Lgitur neque stultorum</a>
-                <h4>Brand Identity / Web Design</h4>
+                <div class="project-tile-body">
+                  <h2 class="project-name">Lorem lipsum</h2>
+                  <div class="line project-line"></div>
+                  <div class="project-stack">
+                    <h3 class="project-stack-item">Lorem.</h3>
+                    <h3 class="project-stack-item">Lorem.</h3>
+                    <h3 class="project-stack-item">Lorem.</h3>
+                    <h3 class="project-stack-item">Lorem.</h3>
+                  </div>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, quaerat?</p>
+                  <div class="project-tile-bottom">
+                    <a href="#" class="project-bottom-preview">Preview</a>
+                    <a href="#" class="project-bottom-github">Github</a>
+                  </div>
+                </div>                               
               </div>
-              
+
+           
             </div>
           </section>
-          <section class="section prices scroll">
+          <section class="section prices scroll scroll-opacity">
             <a href="#" class="price-anchor" id="prices"></a>
             <h6>pricing</h6>
             <h3>The right price for you, whoever you are</h3>
@@ -176,13 +219,13 @@
           <div class="footer-body">
             <div class="footer-body-content">
               <a href="#" class="anchor" id="contact"></a>
-              <form class="contact-form scroll" >
+              <form class="contact-form scroll" action="https://formsubmit.co/pgamesdev1@gmail.com" method="POST">
                 <div class="contact-form-top">
-                  <input type="name" placeholder="First and last name"/>
-                  <input type="email" placeholder="Email adress"/>
+                  <input type="text" name="name" placeholder="First and last name" required/>
+                  <input type="email" name="email" placeholder="Email adress" required/>
                 </div>
 
-                <textarea name="" placeholder="Message"></textarea>
+                <textarea name="message" placeholder="Message" required></textarea>
                 <button class="footer-contact-button">Send message</button>
               </form>
               <div class="footer-body-right">
@@ -190,7 +233,7 @@
                 <p>If you want to know anything more about
                   me you can get in touch with me using
                   the contact form or manually by emailing
-                  me at <a href="mailto:pgamesdev1@gmail.com">pgamesdev1@gmail.com</a>.</p>
+                  me at <a href="mailto:pgamesdev1@gmail.com" class="email">pgamesdev1@gmail.com</a>.</p>
                 <div class="social footer-social"> 
                   <!-- <div class="circle"></div>
                   <div class="circle"></div> -->
