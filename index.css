@@ -99,6 +99,7 @@ header a{
 }
 .nav-item:last-child{
   padding: 5px 20px;
+  border-radius: 5px;
   border: 2px solid #F54748;
   transition: .1s ease-out;
   background: transparent;
@@ -278,29 +279,32 @@ header a{
     border-bottom: 2px solid #F54748;
   }
   .nav-item:last-child{
-    /* padding: 0 0;
-    margin-bottom: 0;
-    background:none;
-    background-color: transparent;
-    color: #212121;
-    border: 2px solid transparent;
-    font-weight: 600;
-    transition: .3s ease-out border;
-    color: black;
-    padding: 5px;
-    border: 2px solid #F54748; */
     padding: 5px 10px;
   }
-  /* .nav-item:last-child:hover{
-    color: black;
-    border-bottom: 2px solid #F54748;
-  } */
   .links{
     flex-direction: column;
     margin-top: auto;
   }
   .hamburger{
     display: block;
+  }
+}
+@media (max-width: 480px){
+  .hamburger div{
+    width: 30px;
+    right: 0px;
+    background-color: white;
+    height: 3px;
+    top:10px;
+    position: absolute;
+  }
+  .hamburger div:nth-child(2){
+      top: 20px;
+      width: 20px;
+  }
+  .hamburger div:last-child{
+      top:30px;
+      width: 8px;
   }
 }
 /*WELCOME SECTION*/
@@ -310,6 +314,7 @@ header a{
   justify-content:center;
   align-items:center;
   text-align:center;
+  padding-top: 90px;
 }
 .welcome-message{
   display:flex;
@@ -347,6 +352,7 @@ header a{
   color:white;
   font-size: 16px;
   padding: 20px 60px;
+  border-radius: 5px;
   text-transform: uppercase;
   white-space:nowrap;
   margin: 0 15px;
@@ -375,11 +381,11 @@ header a{
     margin-top: 20px;
   }
   .welcome-message h1{
-    font-size: 100px;
-  }
-  .welcome-message.bg h1{
     font-size: 80px;
   }
+  /* .welcome-message.bg h1{
+    font-size: 80px;
+  } */
   .welcome-message h2{
     font-size: 30px;
     margin-bottom: auto;
@@ -395,6 +401,17 @@ header a{
     align-items: flex-end;
     padding-bottom: 30px;
   } */
+}
+@media (max-width: 420px){
+  .welcome-message h1{
+    font-size: 48px;
+  }
+  .welcome-message h2{
+    font-size: 24px;
+  }
+  .welcome-buttons a{
+    font-size: 14px;
+  }
 }
 @media (min-height: 800px){
   #home{
@@ -638,25 +655,6 @@ header a{
   color:black;
 }
 
-/* .project-tile img:hover{
-  transform: translateY(-10px)
-} */
-/* .project-tile a{
-  text-transform:uppercase;
-  margin-top:20px;
-  font-size: 16px;
-  letter-spacing: .8px;
-  font-weight:500;
-}
-.project-tile h4{
-  font-weight: 300;
-  margin-top: 15px;
-} */
-/* @media (min-width: 1300px){
-  .project-tile {
-    max-width: 450px;
-  }
-} */
 @media (max-width: 760px){
   .project-tile{
     margin: 10px 0;
@@ -752,7 +750,7 @@ header a{
   font-weight: 500;
 }
 .plan-top{
-  padding: 30px;
+  padding: 20px;
 }
 .plan-price{
  color:#444444; 
@@ -771,7 +769,7 @@ header a{
 }
 /*plan bottom*/
 .plan-info{
-  padding: 20px 30px 30px 30px;
+  padding: 20px;
   background-color: #F9FAFB;
   border-radius: 0 0 8px 8px;
 }
@@ -790,8 +788,9 @@ header a{
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  font-size: 16px;
   border-radius: 5px;
-  padding: 12px 0;
+  padding: 15px;
   cursor: pointer;
 }
 #best-plan .contact-button{
@@ -833,9 +832,9 @@ header a{
   .plan-info li{
     font-size: 20px;
   }
-  .contact-button{
+  /* .contact-button{
     font-size: 24px;
-  }
+  } */
 }
 @media (max-width: 768px){
   .plan{
@@ -873,16 +872,17 @@ footer *{
 }
 footer input, footer textarea{
   border: 1px solid #D1D1D1;
-  font-size: 24px;
-  padding: 7px 10px;
+  /* font-size: 24px; */
+  padding: 10px;
   color:black;
   font-family: "Roboto", sans-serif!important;
   font-weight: 300;
   border-radius: 5px;
   resize: none;
+  font-size: 16px;
 }
 footer textarea{
-  padding: 10px 7px 90px 7px;
+  padding-bottom: 90px;
 }
 .footer-top {
   position: absolute;
@@ -951,16 +951,20 @@ footer textarea{
 }
 .contact-form input{
   margin-bottom: 10px;
+  font-size: 16px;
+  padding: 10px;
 }
-.contact-form textarea{
+/* .contact-form textarea{
   margin-top: 10px;
-}
+  font-size: 16px;
+  padding: 10px;
+} */
 .contact-form button{
-  font-size: 24px;
+  font-size: 16px;
   background-color: #343F56;
   color:white;
   border-radius: 5px;
-  padding: 10px 0;
+  padding: 15px;
   margin-top: 20px;
 }
 .contact-form button:hover{
@@ -973,6 +977,7 @@ footer textarea{
   width: 100%;
   display: flex;
   padding: 20px;
+  text-align: center;
   justify-content: center;
 }
 .footer-social{
