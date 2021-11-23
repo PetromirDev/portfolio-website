@@ -196,12 +196,9 @@ header a{
   transform: skewY(-6deg);
   transform-origin: top left;
 }
-
 #navbar{
   display:flex;
 }
-
-
 @media (min-width: 1300px){
   .nav-item{
     font-size: 16px;
