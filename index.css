@@ -719,7 +719,7 @@ header a{
   margin-top: 50px;
 }
 .plans-disclaimer{
-  color: rgb(228, 228, 228);
+  color: rgb(228, 228, 228, 0.8);
   margin-top: 20px;
   max-width: 100%;
 }
