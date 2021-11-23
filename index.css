@@ -190,7 +190,7 @@ header a{
   position: absolute;
   width: 100%;
   bottom: 0px;/*-100px*/
-  height: 300px;
+  height: 180px;
   background: rgb(255, 219, 219);
   z-index: 0;
   transform: skewY(-6deg);
