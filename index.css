@@ -358,6 +358,7 @@ header a{
   width: 100%;
   max-width: 400px;
   align-self: center;
+  transition: .3s ease-out;
 }
 .welcome-buttons a:hover{
   background-color:white;
@@ -787,6 +788,7 @@ header a{
   border-radius: 5px;
   padding: 15px;
   cursor: pointer;
+  transition: .3s ease-out;
 }
 #best-plan .contact-button{
   background-color: #F54748;
