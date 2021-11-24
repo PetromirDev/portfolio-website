@@ -1016,5 +1016,6 @@ footer textarea{
     padding: 15px;
     width: 100%;
     max-width: 400px;
+    margin: 0 10px;
   }
 }
