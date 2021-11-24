@@ -662,6 +662,15 @@ header a{
   .projects >  h6{
     font-size: 16px;
   }
+  .project-stack{
+    margin-top: 0;
+  }
+  .project-stack-item{
+    font-size: 14px;
+  }
+  .project-tile-body p{
+    font-size: 16px;
+  }
 }
 @media (min-width: 1300px){
   .projects > h3{
@@ -1016,7 +1025,7 @@ footer textarea{
     padding: 15px;
     width: 100%;
     max-width: 400px;
-    margin: 0 10px;
+    margin: 0;
   }
   .footer-body{
     padding: 10px;
