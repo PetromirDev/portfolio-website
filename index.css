@@ -1018,4 +1018,7 @@ footer textarea{
     max-width: 400px;
     margin: 0 10px;
   }
+  .footer-body{
+    padding: 10px;
+  }
 }
