@@ -740,6 +740,8 @@ header a{
   background-color: white;
   border-radius: 8px;
   margin: 10px;
+  width: 100%;
+  max-width: 350px;
 }
 #best-plan{
   border: 3px solid #cf1414;
