@@ -812,6 +812,25 @@ header a{
 #best-plan .contact-button:hover{
   background-color: #e62929;
 }
+
+.certificates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.certificate {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  cursor: pointer; 
+  border-radius: 5px;
+}
+.certificate:last-child {
+  margin-top: 25px;
+}
+
 @media (min-width: 1300px){
   .plan{
     margin:20px;
