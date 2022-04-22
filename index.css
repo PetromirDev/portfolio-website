@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,700&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"); */
 html,body{
-  margin:0;
-  padding:0;
-  font-family: "Roboto", sans-serif!important;
+  font-family: "Roboto", sans-serif;
   overflow-x:hidden;
   scroll-behavior:smooth;
 }
@@ -18,6 +16,10 @@ body{
   padding:0;
   box-sizing:border-box;
   color: #EDEDED;
+}
+input, button, a, textarea{
+  outline:none;
+  font-family: "Roboto", sans-serif;
 }
 /*SCROLL ANIMATION*/
 .scroll {
@@ -93,7 +95,7 @@ header a{
   text-transform:uppercase;
   font-size: 14px;
   border-bottom: 2px solid transparent;
-  transition: .2s border ease-out;
+  transition: .3s border ease-out;
 }
 .nav-item:hover{
   border-bottom: 2px solid #F54748;
@@ -358,7 +360,7 @@ header a{
   width: 100%;
   max-width: 400px;
   align-self: center;
-  transition: .3s ease-out;
+  transition: .4s ease-in-out;
 }
 .welcome-buttons a:hover{
   background-color:white;
@@ -556,12 +558,6 @@ header a{
   text-align: center;
   font-weight: 600;
 }
-/* .projects > h3{
-  font-size:26px;
-  text-transform:uppercase;
-  font-weight: 300;
-  margin-bottom: 40px;
-} */
 .projects-flex{
   display:flex;
   justify-content:center;
@@ -579,7 +575,6 @@ header a{
 
 }
 .project-tile img{
-  /* transition: .6s; */
   width: 100%;
   height: auto;
   border-radius: 15px;
@@ -633,7 +628,7 @@ header a{
 .project-bottom-preview{
   background-color: white;
   color:black;
-  transition: .3s ease-out;
+  transition: .4s ease-in-out;
   border: 1px solid transparent;
 }
 .project-bottom-preview:hover{
@@ -643,7 +638,7 @@ header a{
 }
 .project-bottom-github{
   border: 1px solid white;
-  transition: .3s ease-out;
+  transition: .4s ease-in-out;
 }
 .project-bottom-github:hover{
   border: 1px solid transparent;
@@ -714,7 +709,8 @@ header a{
   font-weight: 400;
   text-align: center;
   font-size: 20px;
-  color: rgb(238, 238, 238);
+  /* color: rgb(238, 238, 238); */
+  color: #F54748;
   margin-bottom: 10px;
 }
 .prices h3{
@@ -742,9 +738,11 @@ header a{
   margin: 10px;
   width: 100%;
   max-width: 350px;
+  display: flex;
+  flex-direction: column;
 }
 #best-plan{
-  border: 3px solid #cf1414;
+  border: 3px solid #d63737;
 }
 .plan-category{
   text-transform: uppercase;
@@ -758,6 +756,7 @@ header a{
 }
 .plan-top{
   padding: 20px;
+  flex: 1;
 }
 .plan-price{
  color:#444444; 
@@ -770,7 +769,8 @@ header a{
   font-weight: 900;
 }
 .plan-desc{
-  color:#5f5f5f;
+  /* color:#5f5f5f; */
+  color: rgba(0,0,0, .8);
   max-width: 350px;
   margin-top: 15px;
 }
@@ -782,15 +782,17 @@ header a{
 }
 .plan-info li{
   list-style-type: none;
-  color:rgb(44, 44, 44);
+  /* color:rgb(44, 44, 44); */
+  color: rgba(0, 0, 0, .68);
 }
 .plan-info img{
   margin-right: 10px;
 }
 .contact-button{
   width: 100%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  color: #F54748;
+  border: 1px solid #d63737;;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+  color: #d63737;
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -799,12 +801,11 @@ header a{
   border-radius: 5px;
   padding: 15px;
   cursor: pointer;
-  transition: .3s ease-out;
+  transition: .4s ease-in-out;
 }
 #best-plan .contact-button{
-  background-color: #F54748;
+  background-color: #d63737;
   color: white;
-  box-shadow: none;
 }
 .contact-button:hover{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 12px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -859,9 +860,6 @@ header a{
   .plan-info li{
     font-size: 20px;
   }
-  /* .contact-button{
-    font-size: 24px;
-  } */
 }
 @media (max-width: 768px){
   .plan{
@@ -889,8 +887,8 @@ footer{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
-  background-color: #F54748;
+  margin-top: 80px;
+  background-color: rgba(255,255,255);
 }
 footer *{
   outline: none;
@@ -899,10 +897,9 @@ footer *{
 }
 footer input, footer textarea{
   border: 1px solid #D1D1D1;
-  /* font-size: 24px; */
   padding: 10px;
   color:black;
-  font-family: "Roboto", sans-serif!important;
+  /* font-family: "Roboto", sans-serif!important; */
   font-weight: 300;
   border-radius: 5px;
   resize: none;
@@ -918,25 +915,25 @@ footer textarea{
   right: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: #F54748;
-  z-index: -1;
-  transform: skewY(-6deg);
+  height: 150px;
+  background-color: #0B0E11;
+  z-index: 3;
+  transform: skewY(-4deg);
   transform-origin: top left;
 }
 .footer-body{
-  padding: 0 20px;
-  top:-120px;
-  position: relative;
+  width: 100%;
+  padding: 80px;
 }
 .footer-body-content{
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   position: relative;
+  z-index: 4;
 }
 .footer-body-right{
-  margin-top: 80px;
+  /* margin-top: 80px; */
   margin-left: 40px;
 }
 .footer-body-right h2{
@@ -954,7 +951,7 @@ footer textarea{
   border-bottom: 1px solid black;
   padding: 1.5px 0;
   color:rgb(24, 24, 24);
-  transition: .1s color,border;
+  transition: .4s ease-in-out;
 }
 .email:hover{
   color:white;
@@ -962,7 +959,6 @@ footer textarea{
 }
 /*FOOTER-CONTACT-FORM*/
 .contact-form{
-  position: relative;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -981,11 +977,6 @@ footer textarea{
   font-size: 16px;
   padding: 10px;
 }
-/* .contact-form textarea{
-  margin-top: 10px;
-  font-size: 16px;
-  padding: 10px;
-} */
 .contact-form button{
   font-size: 16px;
   background-color: #343F56;
@@ -993,9 +984,13 @@ footer textarea{
   border-radius: 5px;
   padding: 15px;
   margin-top: 20px;
+  transition: .4s ease-in-out;
+  border: 1px solid transparent;
 }
 .contact-form button:hover{
-  background-color: #2b354b;
+  color: #343F56;
+  border-color: #343F56;
+  background-color: transparent;
   cursor: pointer;
 }
 /*FOOTER-BOTTOM*/
@@ -1009,6 +1004,10 @@ footer textarea{
 }
 .footer-social{
   margin-top: 20px;
+  display: flex;
+  /* justify-content: center; */
+  justify-content: flex-start;
+  align-items: center;
 }
 .footer-copyright p{
   color:white;
@@ -1017,22 +1016,24 @@ footer textarea{
 @media (max-width: 1200px){
   .footer-body-content{
     flex-direction: column;
-    align-items: center;
   }
   .footer-body-right{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-top: 30px;
     margin-left: 0;
     padding: 0 20px;
   }
   .footer-body-right p{
     max-width: 400px;
   }
-
   .contact-form{
     margin: 0 20px;
+  }
+  .footer-social {
+    justify-content: center;
   }
 }
 @media (max-width: 760px){

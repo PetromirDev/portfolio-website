@@ -1,5 +1,5 @@
-var mobile = document.getElementById("mobile-nav");
-var navbar = document.getElementById("navbar")
+const mobile = document.getElementById("mobile-nav");
+const navbar = document.getElementById("navbar")
 window.addEventListener('resize', function() {
   if(document.body.clientWidth > 768){
     mobile.style.display = "flex";
@@ -9,7 +9,7 @@ window.addEventListener('resize', function() {
     mobile.style.display = "none"
   }
 }, true);
-var navItems = document.getElementsByClassName("nav-item")    
+const navItems = document.getElementsByClassName("nav-item")    
 function menu(){
   if(document.body.clientWidth < 768){
     if(mobile.style.display == "none"){
