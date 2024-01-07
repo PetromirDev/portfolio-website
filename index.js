@@ -1,5 +1,5 @@
-const mobile = document.getElementById('mobile-nav')
-const navbar = document.getElementById('navbar')
+const mobile = document.getElementById('navigation')
+const navbar = document.getElementById('mobile-navbar')
 window.addEventListener(
 	'resize',
 	function () {
@@ -12,7 +12,7 @@ window.addEventListener(
 	},
 	true
 )
-const navItems = document.getElementsByClassName('nav-item')
+const navItems = document.getElementsByClassName('nav-link')
 function menu() {
 	if (document.body.clientWidth < 768) {
 		if (mobile.style.display == 'none') {
